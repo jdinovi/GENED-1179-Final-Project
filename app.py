@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request
 from network import clean, build_vector, get_model
 import numpy as np
+from dict import mydict
 
 
 app = Flask(__name__)
@@ -15,8 +16,6 @@ def blendie_start():
 
 @app.route('/respond', methods=['POST', 'GET'])
 def blendie_respond():
-    with open('mydict.txt', 'r') as f:
-        mydict = set(f.read().split(',')[1:])
     size = len(mydict)
     user_feeling = request.form['user_feeling']
     user_feeling = clean(user_feeling)
