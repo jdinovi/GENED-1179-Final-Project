@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <form method="POST" action="/respond">
+
+        <label for="user_feeling">How are you feeling?</label><br>
+        <input type="text" name="user_feeling">
+        <button type="submit">Enter</button>
+    </form>
+    <script src="../static/js/main.js"></script>
+    <p>{{ response }}</p>
+{% endblock %}

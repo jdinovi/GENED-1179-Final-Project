@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <p>{{ response }}</p>
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <form method="POST" action="/techniques">
+
+        <label for="technique">Would you like Cognitive Behavioral Therapy techniques or Psychodynamic Psychotherapy techniques (CBT or PPT)</label><br>
+        <input type="text" name="technique" pattern="cbt|CBT|Cbt|cBt|cbT|cBT|CbT|CBt|ppt|PPT|Ppt|pPt|ppT|pPT|PpT|pPT">
+        <button type="submit">Enter</button>
+    </form>
+    <script src="../static/js/main.js"></script>
+{% endblock %}

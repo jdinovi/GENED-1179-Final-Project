@@ -1,0 +1,24 @@
+body {
+    background-image: url('../images/blendie_bot.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+#start-button {
+    top:63.75%;
+    left:51.35%;
+    width:75px;
+    height:35px;
+    position: absolute;
+    z-index: 2;
+}
+
+#home-button {
+    top:91%;
+    left:91.5%;
+    width:75px;
+    height:35px;
+    position: absolute;
+    z-index: 2;
+}

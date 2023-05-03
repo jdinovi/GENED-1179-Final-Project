@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <form method="POST" action="/start">
+        <button type="submit" id="start-button">Start</button>
+    </form>
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <p id="slow-type"></p>
+    <script src="../static/js/main.js"></script>
+{% endblock %}
