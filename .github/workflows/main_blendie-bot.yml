@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'Blendie-Bot'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_7905DE98C0DE43C3A00AC3FC1F8294EC }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_8814B6B674C8477EA0F9E10A1B1DCBEA }}
