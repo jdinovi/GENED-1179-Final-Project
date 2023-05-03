@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, url_for
+from flask import Flask, render_template, request
 from network import clean, build_vector, get_model
 import numpy as np
 
@@ -57,3 +57,6 @@ def blendie_techniques():
         challenging times. Remember, there are always people who care about you.
         '''
         return render_template('blendie_techniques.html', response=response)
+    
+if __name__ == '__main__':
+    app.run(debug=True, host="0.0.0.0", port=8080)
