@@ -2,7 +2,6 @@ from flask import Flask, render_template, request
 from network import clean, build_vector, get_model
 import numpy as np
 
-
 app = Flask(__name__)
 
 @app.route('/', methods=['POST', 'GET'])
